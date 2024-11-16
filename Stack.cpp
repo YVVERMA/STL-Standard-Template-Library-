@@ -4,7 +4,9 @@
 #include <deque>
 #include <stack>
 using namespace std;
-//  Stack called for (LIFO)-: LAST IN FIRST OUT
+/*
+A stack is a fundamental data structure in computer science, characterized by a linear sequence of elements, with operations performed in a specific order. It follows the Last In First Out (LIFO) principle, meaning that the most recently added element is the first one to be removed.
+*/
 
 int main()
 {
