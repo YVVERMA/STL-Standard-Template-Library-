@@ -46,11 +46,45 @@ using namespace std;
 }
 */
 
+/*
+int main()
+{
+    // vector<int> vec = {1,2,3,4,5};// dynamic programming - tabulation DP[][]
+    vector<int> vec(10, 5);
+    vector<int> vec2(vec);
 
-int main() {
-    vector<int> vec = {1,2,3,4,5};
+    for (int val : vec2)
+    {
+        cout << val << " ";
+    }
+    cout << endl;
+}
+*/
 
-    for(int val : vec){
+// vector- {erase, insert, clear, empty }; TC = O(n);
+int main()
+{
+
+    vector<int> vec = {1, 2, 3, 4, 5};
+    // vec.erase(vec.begin()+0); // index 0 delete
+    // vec.erase(vec.begin()+2); // index 2 delete
+    /// Delete range of number
+    // vec.erase(vec.begin()+1,vec.begin()+3);
+
+    vec.insert(vec.begin() + 2, 100); // insert element in idx
+
+    vec.clear();// clear all Element
+
+    if (vec.empty()) // check vec is emty or not
+    {
+        cout << "emty";
+    }
+    else
+    {
+        cout << "Not emty\n"; 
+    }
+    for (int val : vec)
+    {
         cout << val << " ";
     }
     cout << endl;
